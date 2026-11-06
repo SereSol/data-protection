@@ -51,6 +51,16 @@ class TestPrivacyMultiCompany(BaseCommon):
         self.assertEqual(activity.company_id, self.company_a)
         self.assertEqual(activity.controller_id, self.company_a.partner_id)
 
+    def test_defaults_follow_active_company(self):
+        # The user's main company is A, but B is the active company
+        activities = self._activities(self.manager, self.company_b | self.company_a)
+        defaults = activities.default_get(["company_id", "controller_id"])
+        self.assertEqual(defaults["company_id"], self.company_b.id)
+        self.assertEqual(defaults["controller_id"], self.company_b.partner_id.id)
+        activity = activities.create({"name": "Active company"})
+        self.assertEqual(activity.company_id, self.company_b)
+        self.assertEqual(activity.controller_id, self.company_b.partner_id)
+
     def test_controller_follows_given_company(self):
         # The user's main company is A, the activity belongs to B
         activity = self._activities(
