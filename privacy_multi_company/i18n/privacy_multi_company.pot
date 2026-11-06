@@ -1,0 +1,90 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* privacy_multi_company
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0-20261015\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-05 16:00+0000\n"
+"PO-Revision-Date: 2026-11-05 16:00+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: privacy_multi_company
+#: model:ir.model.fields,help:privacy_multi_company.field_res_company__privacy_email
+msgid ""
+"Address for data protection matters, for example the one of the data "
+"protection officer. Privacy features can use it as sender, reply-to and "
+"contact shown to data subjects."
+msgstr ""
+
+#. module: privacy_multi_company
+#: model:ir.model,name:privacy_multi_company.model_res_company
+msgid "Companies"
+msgstr ""
+
+#. module: privacy_multi_company
+#: model:ir.model.fields,field_description:privacy_multi_company.field_privacy_activity__company_id
+#: model_terms:ir.ui.view,arch_db:privacy_multi_company.activity_search
+msgid "Company"
+msgstr ""
+
+#. module: privacy_multi_company
+#: model:ir.model.fields,help:privacy_multi_company.field_privacy_activity__company_id
+msgid ""
+"Company that owns this data processing activity. Its contact is the "
+"controller."
+msgstr ""
+
+#. module: privacy_multi_company
+#: model:ir.model.fields,field_description:privacy_multi_company.field_privacy_activity__controller_id
+msgid "Controller"
+msgstr ""
+
+#. module: privacy_multi_company
+#. odoo-python
+#: code:addons/privacy_multi_company/hooks.py:0
+msgid ""
+"Controller changed from %(old)s to %(new)s, the contact of the activity's "
+"company."
+msgstr ""
+
+#. module: privacy_multi_company
+#: model:ir.model,name:privacy_multi_company.model_privacy_activity
+msgid "Data processing activities"
+msgstr ""
+
+#. module: privacy_multi_company
+#: model:ir.model.fields,field_description:privacy_multi_company.field_privacy_activity__display_name
+#: model:ir.model.fields,field_description:privacy_multi_company.field_res_company__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: privacy_multi_company
+#: model:ir.model.fields,field_description:privacy_multi_company.field_privacy_activity__id
+#: model:ir.model.fields,field_description:privacy_multi_company.field_res_company__id
+msgid "ID"
+msgstr ""
+
+#. module: privacy_multi_company
+#: model:ir.model.fields,field_description:privacy_multi_company.field_res_company__privacy_email
+msgid "Privacy Email"
+msgstr ""
+
+#. module: privacy_multi_company
+#. odoo-python
+#: code:addons/privacy_multi_company/models/res_company.py:0
+msgid "The privacy email of %(company)s is not a valid email address."
+msgstr ""
+
+#. module: privacy_multi_company
+#: model:ir.model.fields,help:privacy_multi_company.field_privacy_activity__controller_id
+msgid ""
+"Whoever determines the purposes and means of the processing of personal "
+"data."
+msgstr ""

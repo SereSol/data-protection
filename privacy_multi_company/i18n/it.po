@@ -1,0 +1,98 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* privacy_multi_company
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0\n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#. module: privacy_multi_company
+#: model:ir.model.fields,help:privacy_multi_company.field_res_company__privacy_email
+msgid ""
+"Address for data protection matters, for example the one of the data "
+"protection officer. Privacy features can use it as sender, reply-to and "
+"contact shown to data subjects."
+msgstr ""
+"Indirizzo per le questioni di protezione dei dati, per esempio quello del "
+"responsabile della protezione dei dati (DPO). Le funzioni privacy possono "
+"usarlo come mittente, indirizzo di risposta e contatto mostrato agli "
+"interessati."
+
+#. module: privacy_multi_company
+#: model:ir.model,name:privacy_multi_company.model_res_company
+msgid "Companies"
+msgstr "Aziende"
+
+#. module: privacy_multi_company
+#: model:ir.model.fields,field_description:privacy_multi_company.field_privacy_activity__company_id
+#: model_terms:ir.ui.view,arch_db:privacy_multi_company.activity_search
+msgid "Company"
+msgstr "Azienda"
+
+#. module: privacy_multi_company
+#: model:ir.model.fields,help:privacy_multi_company.field_privacy_activity__company_id
+msgid ""
+"Company that owns this data processing activity. Its contact is the "
+"controller."
+msgstr ""
+"Azienda a cui appartiene questa attività di trattamento. Il suo contatto è "
+"il titolare del trattamento."
+
+#. module: privacy_multi_company
+#: model:ir.model.fields,field_description:privacy_multi_company.field_privacy_activity__controller_id
+msgid "Controller"
+msgstr "Titolare trattamento"
+
+#. module: privacy_multi_company
+#. odoo-python
+#: code:addons/privacy_multi_company/hooks.py:0
+msgid ""
+"Controller changed from %(old)s to %(new)s, the contact of the activity's "
+"company."
+msgstr ""
+"Titolare del trattamento cambiato da %(old)s a %(new)s, il contatto "
+"dell'azienda dell'attività."
+
+#. module: privacy_multi_company
+#: model:ir.model,name:privacy_multi_company.model_privacy_activity
+msgid "Data processing activities"
+msgstr "Attività di elaborazione dei dati"
+
+#. module: privacy_multi_company
+#: model:ir.model.fields,field_description:privacy_multi_company.field_privacy_activity__display_name
+#: model:ir.model.fields,field_description:privacy_multi_company.field_res_company__display_name
+msgid "Display Name"
+msgstr "Nome visualizzato"
+
+#. module: privacy_multi_company
+#: model:ir.model.fields,field_description:privacy_multi_company.field_privacy_activity__id
+#: model:ir.model.fields,field_description:privacy_multi_company.field_res_company__id
+msgid "ID"
+msgstr "ID"
+
+#. module: privacy_multi_company
+#: model:ir.model.fields,field_description:privacy_multi_company.field_res_company__privacy_email
+msgid "Privacy Email"
+msgstr "Email per la privacy"
+
+#. module: privacy_multi_company
+#. odoo-python
+#: code:addons/privacy_multi_company/models/res_company.py:0
+msgid "The privacy email of %(company)s is not a valid email address."
+msgstr "L'email per la privacy di %(company)s non è un indirizzo email valido."
+
+#. module: privacy_multi_company
+#: model:ir.model.fields,help:privacy_multi_company.field_privacy_activity__controller_id
+msgid ""
+"Whoever determines the purposes and means of the processing of personal "
+"data."
+msgstr ""
+"Chi determina le finalità e i mezzi del trattamento dei dati personali."

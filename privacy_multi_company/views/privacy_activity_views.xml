@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2026 APG23
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <record id="activity_form" model="ir.ui.view">
+        <field name="name">Privacy Activity Form: company</field>
+        <field name="model">privacy.activity</field>
+        <field name="inherit_id" ref="privacy.activity_form" />
+        <field name="arch" type="xml">
+            <field name="controller_id" position="before">
+                <field
+                    name="company_id"
+                    groups="base.group_multi_company"
+                    options="{'no_create': True}"
+                />
+            </field>
+            <field name="controller_id" position="attributes">
+                <attribute name="readonly">1</attribute>
+                <attribute name="force_save">1</attribute>
+            </field>
+        </field>
+    </record>
+    <record id="activity_tree" model="ir.ui.view">
+        <field name="name">Privacy Activity List: company</field>
+        <field name="model">privacy.activity</field>
+        <field name="inherit_id" ref="privacy.activity_tree" />
+        <field name="arch" type="xml">
+            <field name="controller_id" position="before">
+                <field
+                    name="company_id"
+                    groups="base.group_multi_company"
+                    optional="show"
+                />
+            </field>
+        </field>
+    </record>
+    <record id="activity_search" model="ir.ui.view">
+        <field name="name">Privacy Activity Search: company</field>
+        <field name="model">privacy.activity</field>
+        <field name="inherit_id" ref="privacy.activity_search" />
+        <field name="arch" type="xml">
+            <field name="controller_id" position="before">
+                <field name="company_id" groups="base.group_multi_company" />
+            </field>
+            <filter name="controller_id_groupby" position="before">
+                <filter
+                    name="company_id_groupby"
+                    string="Company"
+                    context="{'group_by': 'company_id'}"
+                    groups="base.group_multi_company"
+                />
+            </filter>
+        </field>
+    </record>
+</odoo>
