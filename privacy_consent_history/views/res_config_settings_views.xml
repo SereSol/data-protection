@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2026 APG23
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <record id="res_config_settings_view_form" model="ir.ui.view">
+        <field
+            name="name"
+        >res.config.settings.view.form: privacy consent history</field>
+        <field name="model">res.config.settings</field>
+        <field name="inherit_id" ref="base.res_config_settings_view_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//form" position="inside">
+                <app
+                    data-string="Data Protection"
+                    string="Data Protection"
+                    name="data_protection"
+                    groups="base.group_system"
+                >
+                    <block title="Consent log" name="privacy_consent_history">
+                        <setting
+                            id="privacy_consent_archive_retention"
+                            string="Archive retention"
+                            help="Years the archived consent log of an anonymized person is kept before being deleted. 0: kept indefinitely."
+                        >
+                            <field name="privacy_consent_archive_retention_years" />
+                        </setting>
+                    </block>
+                </app>
+            </xpath>
+        </field>
+    </record>
+</odoo>

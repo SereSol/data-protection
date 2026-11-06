@@ -1,0 +1,2 @@
+odoo-addon-privacy @ git+https://github.com/OCA/data-protection.git@refs/pull/96/head#subdirectory=privacy
+odoo-addon-privacy_consent @ git+https://github.com/OCA/data-protection.git@refs/pull/97/head#subdirectory=privacy_consent

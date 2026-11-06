@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2026 APG23
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo noupdate="1">
+    <record
+        id="collection_method_signed_form"
+        model="privacy.consent.collection.method"
+    >
+        <field name="name">Signed paper form</field>
+        <field name="sequence">10</field>
+    </record>
+    <record id="collection_method_email" model="privacy.consent.collection.method">
+        <field name="name">Email from the data subject</field>
+        <field name="sequence">20</field>
+    </record>
+    <record id="collection_method_other" model="privacy.consent.collection.method">
+        <field name="name">Other</field>
+        <field name="sequence">90</field>
+        <field name="note_required" eval="True" />
+    </record>
+</odoo>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2026 APG23
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <menuitem
+        id="menu_consent_log"
+        action="consent_log_action"
+        parent="privacy.menu_data_protection_report"
+        groups="privacy.group_data_protection_user"
+        sequence="10"
+    />
+    <menuitem
+        id="menu_consent_log_archive"
+        action="consent_log_archive_action"
+        parent="privacy.menu_data_protection_report"
+        groups="privacy.group_data_protection_manager"
+        sequence="20"
+    />
+    <menuitem
+        id="menu_data_protection_configuration"
+        name="Configuration"
+        parent="privacy.parent_menu_data_protection"
+        groups="privacy.group_data_protection_manager"
+        sequence="80"
+    />
+    <menuitem
+        id="menu_collection_method"
+        action="collection_method_action"
+        parent="menu_data_protection_configuration"
+        sequence="10"
+    />
+</odoo>

@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+log_read,Read the consent log,model_privacy_consent_log,privacy.group_data_protection_user,1,0,0,0
+archive_read,Read the consent log archive,model_privacy_consent_log_archive,privacy.group_data_protection_manager,1,0,0,0
+method_read,Read collection methods,model_privacy_consent_collection_method,privacy.group_data_protection_user,1,0,0,0
+method_manage,Manage collection methods,model_privacy_consent_collection_method,privacy.group_data_protection_manager,1,1,1,1

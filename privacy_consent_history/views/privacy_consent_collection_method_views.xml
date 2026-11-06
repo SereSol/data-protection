@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2026 APG23
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <record id="collection_method_list" model="ir.ui.view">
+        <field name="name">Consent Collection Method List</field>
+        <field name="model">privacy.consent.collection.method</field>
+        <field name="arch" type="xml">
+            <list editable="bottom">
+                <field name="sequence" widget="handle" />
+                <field name="name" />
+                <field name="note_required" />
+                <field name="active" column_invisible="True" />
+            </list>
+        </field>
+    </record>
+    <record id="collection_method_search" model="ir.ui.view">
+        <field name="name">Consent Collection Method Search</field>
+        <field name="model">privacy.consent.collection.method</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="name" />
+                <filter
+                    string="Archived"
+                    name="inactive"
+                    domain="[('active', '=', False)]"
+                />
+            </search>
+        </field>
+    </record>
+    <record id="collection_method_action" model="ir.actions.act_window">
+        <field name="name">Collection Methods</field>
+        <field name="res_model">privacy.consent.collection.method</field>
+        <field name="view_mode">list</field>
+    </record>
+</odoo>
