@@ -1,0 +1,547 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* privacy_consent_history
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0-20261015\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-06 15:56+0000\n"
+"PO-Revision-Date: 2026-11-06 15:56+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#. module: privacy_consent_history
+#: model:ir.model.fields,field_description:privacy_consent_history.field_privacy_consent__accepted_changed
+msgid "Accepted Changed"
+msgstr "Accettazione cambiata"
+
+#. module: privacy_consent_history
+#: model:ir.model.fields,field_description:privacy_consent_history.field_privacy_consent_collection_method__active
+msgid "Active"
+msgstr "Attivo"
+
+#. module: privacy_consent_history
+#: model:ir.model.fields,field_description:privacy_consent_history.field_privacy_consent_log__activity_id
+#: model:ir.model.fields,field_description:privacy_consent_history.field_privacy_consent_log_archive__activity_name
+#: model_terms:ir.ui.view,arch_db:privacy_consent_history.consent_log_search
+msgid "Activity"
+msgstr "Attività"
+
+#. module: privacy_consent_history
+#: model:ir.model.fields,field_description:privacy_consent_history.field_privacy_consent_log__answer
+#: model:ir.model.fields,field_description:privacy_consent_history.field_privacy_consent_log_archive__answer
+msgid "Answer"
+msgstr "Risposta"
+
+#. module: privacy_consent_history
+#: model:ir.model.fields,field_description:privacy_consent_history.field_privacy_consent_log_archive__answer_date
+msgid "Answer Date"
+msgstr "Data della risposta"
+
+#. module: privacy_consent_history
+#: model:ir.model.fields,field_description:privacy_consent_history.field_privacy_consent__log_ids
+#: model_terms:ir.ui.view,arch_db:privacy_consent_history.consent_form
+msgid "Answer log"
+msgstr "Registro delle risposte"
+
+#. module: privacy_consent_history
+#: model:ir.model.fields,help:privacy_consent_history.field_privacy_consent_log__confirmed
+msgid "Answers given on a page are confirmed when the page is submitted."
+msgstr ""
+"Le risposte date su una pagina sono confermate quando la pagina viene "
+"inviata."
+
+#. module: privacy_consent_history
+#: model:ir.model.fields,field_description:privacy_consent_history.field_privacy_consent_log_archive__archive_date
+msgid "Archive Date"
+msgstr "Data di archiviazione"
+
+#. module: privacy_consent_history
+#: model_terms:ir.ui.view,arch_db:privacy_consent_history.res_config_settings_view_form
+msgid "Archive retention"
+msgstr "Conservazione dell'archivio"
+
+#. module: privacy_consent_history
+#: model_terms:ir.ui.view,arch_db:privacy_consent_history.collection_method_search
+msgid "Archived"
+msgstr "In archivio"
+
+#. module: privacy_consent_history
+#: model:ir.model,name:privacy_consent_history.model_privacy_consent_log_archive
+msgid "Archived consent answer log"
+msgstr "Archivio del registro dei consensi"
+
+#. module: privacy_consent_history
+#: model:ir.model.fields.selection,name:privacy_consent_history.selection__privacy_consent_log__source__backoffice
+msgid "Back office"
+msgstr "Gestionale"
+
+#. module: privacy_consent_history
+#: model:ir.model.fields,field_description:privacy_consent_history.field_privacy_consent_log__user_agent
+#: model:ir.model.fields,field_description:privacy_consent_history.field_privacy_consent_log_archive__user_agent
+msgid "Browser"
+msgstr "Browser"
+
+#. module: privacy_consent_history
+#: model:ir.model.fields,field_description:privacy_consent_history.field_privacy_consent__collection_date
+#: model:ir.model.fields,field_description:privacy_consent_history.field_privacy_consent_log__collection_date
+#: model:ir.model.fields,field_description:privacy_consent_history.field_privacy_consent_log_archive__collection_date
+msgid "Collection Date"
+msgstr "Data della raccolta"
+
+#. module: privacy_consent_history
+#: model:ir.model.fields,field_description:privacy_consent_history.field_privacy_consent_log_archive__collection_method
+msgid "Collection Method"
+msgstr "Modo di raccolta"
+
+#. module: privacy_consent_history
+#: model:ir.actions.act_window,name:privacy_consent_history.collection_method_action
+#: model:ir.ui.menu,name:privacy_consent_history.menu_collection_method
+msgid "Collection Methods"
+msgstr "Modi di raccolta"
+
+#. module: privacy_consent_history
+#: model:ir.model.fields,field_description:privacy_consent_history.field_privacy_consent__collection_note
+msgid "Collection Note"
+msgstr "Nota sulla raccolta"
+
+#. module: privacy_consent_history
+#: model:ir.model.fields,field_description:privacy_consent_history.field_privacy_consent__collection_attachment_ids
+msgid "Collection attachments"
+msgstr "Allegati della raccolta"
+
+#. module: privacy_consent_history
+#. odoo-python
+#: code:addons/privacy_consent_history/models/privacy_consent.py:0
+msgid "Collection date: %(date)s"
+msgstr "Data della raccolta: %(date)s"
+
+#. module: privacy_consent_history
+#: model:ir.model.fields,field_description:privacy_consent_history.field_privacy_consent__collection_method_id
+#: model:ir.model.fields,field_description:privacy_consent_history.field_privacy_consent_log__collection_method_id
+msgid "Collection method"
+msgstr "Modo di raccolta"
+
+#. module: privacy_consent_history
+#. odoo-python
+#: code:addons/privacy_consent_history/models/privacy_consent.py:0
+msgid "Collection method: %(method)s"
+msgstr "Modo di raccolta: %(method)s"
+
+#. module: privacy_consent_history
+#: model:ir.model,name:privacy_consent_history.model_res_config_settings
+msgid "Config Settings"
+msgstr "Impostazioni di configurazione"
+
+#. module: privacy_consent_history
+#: model:ir.ui.menu,name:privacy_consent_history.menu_data_protection_configuration
+msgid "Configuration"
+msgstr "Configurazione"
+
+#. module: privacy_consent_history
+#: model:ir.model.fields,field_description:privacy_consent_history.field_privacy_consent_log__confirmed
+msgid "Confirmed"
+msgstr "Confermata"
+
+#. module: privacy_consent_history
+#: model:ir.model.fields,field_description:privacy_consent_history.field_privacy_consent_log__consent_id
+msgid "Consent"
+msgstr "Consenso"
+
+#. module: privacy_consent_history
+#: model:ir.actions.act_window,name:privacy_consent_history.consent_log_action
+#: model:ir.ui.menu,name:privacy_consent_history.menu_consent_log
+msgid "Consent Log"
+msgstr "Registro dei consensi"
+
+#. module: privacy_consent_history
+#: model:ir.actions.act_window,name:privacy_consent_history.consent_log_archive_action
+#: model:ir.ui.menu,name:privacy_consent_history.menu_consent_log_archive
+msgid "Consent Log Archive"
+msgstr "Archivio del registro dei consensi"
+
+#. module: privacy_consent_history
+#: model:ir.model,name:privacy_consent_history.model_privacy_consent_log
+msgid "Consent answer log"
+msgstr "Registro dei consensi"
+
+#. module: privacy_consent_history
+#: model:ir.model.fields,field_description:privacy_consent_history.field_res_config_settings__privacy_consent_archive_retention_years
+msgid "Consent archive retention (years)"
+msgstr "Conservazione dell'archivio dei consensi (anni)"
+
+#. module: privacy_consent_history
+#: model:ir.model,name:privacy_consent_history.model_privacy_consent_collection_method
+msgid "Consent collection method"
+msgstr "Modo di raccolta del consenso"
+
+#. module: privacy_consent_history
+#. odoo-python
+#: code:addons/privacy_consent_history/models/privacy_consent.py:0
+msgid "Consent given"
+msgstr "Consenso dato"
+
+#. module: privacy_consent_history
+#: model_terms:ir.ui.view,arch_db:privacy_consent_history.res_config_settings_view_form
+msgid "Consent log"
+msgstr "Registro dei consensi"
+
+#. module: privacy_consent_history
+#: model:ir.model,name:privacy_consent_history.model_privacy_consent
+msgid "Consent of data processing"
+msgstr "Consenso trattamento dati"
+
+#. module: privacy_consent_history
+#. odoo-python
+#: code:addons/privacy_consent_history/models/privacy_consent.py:0
+msgid "Consent refused"
+msgstr "Consenso negato"
+
+#. module: privacy_consent_history
+#: model:ir.model,name:privacy_consent_history.model_res_partner
+msgid "Contact"
+msgstr "Contatto"
+
+#. module: privacy_consent_history
+#: model:ir.model.fields,field_description:privacy_consent_history.field_privacy_consent_collection_method__create_uid
+#: model:ir.model.fields,field_description:privacy_consent_history.field_privacy_consent_log__create_uid
+#: model:ir.model.fields,field_description:privacy_consent_history.field_privacy_consent_log_archive__create_uid
+msgid "Created by"
+msgstr "Creato da"
+
+#. module: privacy_consent_history
+#: model:ir.model.fields,field_description:privacy_consent_history.field_privacy_consent_collection_method__create_date
+#: model:ir.model.fields,field_description:privacy_consent_history.field_privacy_consent_log__create_date
+#: model:ir.model.fields,field_description:privacy_consent_history.field_privacy_consent_log_archive__create_date
+msgid "Created on"
+msgstr "Creato il"
+
+#. module: privacy_consent_history
+#: model_terms:ir.ui.view,arch_db:privacy_consent_history.res_config_settings_view_form
+msgid "Data Protection"
+msgstr "Protezione dei dati"
+
+#. module: privacy_consent_history
+#: model:ir.model.fields.selection,name:privacy_consent_history.selection__privacy_consent_log__filled_by_role__subject
+msgid "Data subject"
+msgstr "Interessato"
+
+#. module: privacy_consent_history
+#: model_terms:ir.ui.view,arch_db:privacy_consent_history.consent_form
+#: model_terms:ir.ui.view,arch_db:privacy_consent_history.consent_log_form
+#: model_terms:ir.ui.view,arch_db:privacy_consent_history.consent_log_list
+msgid "Date"
+msgstr "Data"
+
+#. module: privacy_consent_history
+#: model:ir.actions.server,name:privacy_consent_history.cron_delete_expired_archive_ir_actions_server
+msgid "Delete expired consent log archive"
+msgstr "Cancella l'archivio scaduto del registro dei consensi"
+
+#. module: privacy_consent_history
+#: model:ir.model.fields,field_description:privacy_consent_history.field_privacy_consent__display_name
+#: model:ir.model.fields,field_description:privacy_consent_history.field_privacy_consent_collection_method__display_name
+#: model:ir.model.fields,field_description:privacy_consent_history.field_privacy_consent_log__display_name
+#: model:ir.model.fields,field_description:privacy_consent_history.field_privacy_consent_log_archive__display_name
+#: model:ir.model.fields,field_description:privacy_consent_history.field_res_config_settings__display_name
+#: model:ir.model.fields,field_description:privacy_consent_history.field_res_partner__display_name
+msgid "Display Name"
+msgstr "Nome visualizzato"
+
+#. module: privacy_consent_history
+#: model:ir.model.fields,help:privacy_consent_history.field_privacy_consent__collection_attachment_ids
+msgid ""
+"Documents of the answer, for example the signed form. They are added to the "
+"chatter when the answer is saved."
+msgstr ""
+"Documenti della risposta, per esempio il modulo firmato. Vengono aggiunti "
+"allo storico quando si salva la risposta."
+
+#. module: privacy_consent_history
+#: model:ir.model.fields,field_description:privacy_consent_history.field_privacy_consent_log_archive__partner_email
+msgid "Email"
+msgstr "Email"
+
+#. module: privacy_consent_history
+#: model:privacy.consent.collection.method,name:privacy_consent_history.collection_method_email
+msgid "Email from the data subject"
+msgstr "Email dell'interessato"
+
+#. module: privacy_consent_history
+#: model:ir.model.fields.selection,name:privacy_consent_history.selection__privacy_consent_log__source__email
+msgid "Email link"
+msgstr "Link nell'email"
+
+#. module: privacy_consent_history
+#: model:ir.model.fields.selection,name:privacy_consent_history.selection__privacy_consent_log__filled_by_role__employee
+msgid "Employee"
+msgstr "Impiegato"
+
+#. module: privacy_consent_history
+#: model:ir.model.fields,field_description:privacy_consent_history.field_privacy_consent_log_archive__expiry_date
+msgid "Expiry Date"
+msgstr "Data di scadenza"
+
+#. module: privacy_consent_history
+#: model:ir.model.fields,field_description:privacy_consent_history.field_privacy_consent_log__filled_by_role
+#: model:ir.model.fields,field_description:privacy_consent_history.field_privacy_consent_log_archive__filled_by_role
+msgid "Filled in as"
+msgstr "Compilato in veste di"
+
+#. module: privacy_consent_history
+#: model:ir.model.fields,field_description:privacy_consent_history.field_privacy_consent_log__filled_by_partner_id
+#: model:ir.model.fields,field_description:privacy_consent_history.field_privacy_consent_log_archive__filled_by
+msgid "Filled in by"
+msgstr "Compilato da"
+
+#. module: privacy_consent_history
+#: model:ir.model.fields.selection,name:privacy_consent_history.selection__privacy_consent_log__answer__given
+#: model:ir.model.fields.selection,name:privacy_consent_history.selection__privacy_consent_log_archive__answer__given
+#: model_terms:ir.ui.view,arch_db:privacy_consent_history.consent_log_search
+msgid "Given"
+msgstr "Dato"
+
+#. module: privacy_consent_history
+#: model_terms:ir.ui.view,arch_db:privacy_consent_history.consent_form
+msgid "How it was collected"
+msgstr "Come è stato raccolto"
+
+#. module: privacy_consent_history
+#: model:ir.model.fields,help:privacy_consent_history.field_privacy_consent__collection_method_id
+msgid "How the last answer recorded in the back office was collected."
+msgstr "Come è stata raccolta l'ultima risposta registrata dal gestionale."
+
+#. module: privacy_consent_history
+#: model:ir.model.fields,field_description:privacy_consent_history.field_privacy_consent__id
+#: model:ir.model.fields,field_description:privacy_consent_history.field_privacy_consent_collection_method__id
+#: model:ir.model.fields,field_description:privacy_consent_history.field_privacy_consent_log__id
+#: model:ir.model.fields,field_description:privacy_consent_history.field_privacy_consent_log_archive__id
+#: model:ir.model.fields,field_description:privacy_consent_history.field_res_config_settings__id
+#: model:ir.model.fields,field_description:privacy_consent_history.field_res_partner__id
+msgid "ID"
+msgstr "ID"
+
+#. module: privacy_consent_history
+#: model:ir.model.fields,field_description:privacy_consent_history.field_privacy_consent_log__ip_address
+#: model:ir.model.fields,field_description:privacy_consent_history.field_privacy_consent_log_archive__ip_address
+msgid "IP address"
+msgstr "Indirizzo IP"
+
+#. module: privacy_consent_history
+#: model:ir.model.fields.selection,name:privacy_consent_history.selection__privacy_consent_log__source__import
+msgid "Import"
+msgstr "Importazione"
+
+#. module: privacy_consent_history
+#: model:ir.model.fields,field_description:privacy_consent_history.field_privacy_consent_collection_method__write_uid
+#: model:ir.model.fields,field_description:privacy_consent_history.field_privacy_consent_log__write_uid
+#: model:ir.model.fields,field_description:privacy_consent_history.field_privacy_consent_log_archive__write_uid
+msgid "Last Updated by"
+msgstr "Ultimo aggiornamento di"
+
+#. module: privacy_consent_history
+#: model:ir.model.fields,field_description:privacy_consent_history.field_privacy_consent_collection_method__write_date
+#: model:ir.model.fields,field_description:privacy_consent_history.field_privacy_consent_log__write_date
+#: model:ir.model.fields,field_description:privacy_consent_history.field_privacy_consent_log_archive__write_date
+msgid "Last Updated on"
+msgstr "Ultimo aggiornamento il"
+
+#. module: privacy_consent_history
+#: model:ir.model.fields.selection,name:privacy_consent_history.selection__privacy_consent_log__filled_by_role__guardian
+msgid "Legal guardian"
+msgstr "Tutore"
+
+#. module: privacy_consent_history
+#: model:ir.model.fields,field_description:privacy_consent_history.field_privacy_consent_collection_method__name
+msgid "Name"
+msgstr "Nome"
+
+#. module: privacy_consent_history
+#: model_terms:ir.ui.view,arch_db:privacy_consent_history.consent_log_search
+msgid "Not confirmed"
+msgstr "Non confermate"
+
+#. module: privacy_consent_history
+#: model:ir.model.fields,field_description:privacy_consent_history.field_privacy_consent_log__note
+#: model:ir.model.fields,field_description:privacy_consent_history.field_privacy_consent_log_archive__note
+msgid "Note"
+msgstr "Nota"
+
+#. module: privacy_consent_history
+#: model:ir.model.fields,field_description:privacy_consent_history.field_privacy_consent__collection_note_required
+#: model:ir.model.fields,field_description:privacy_consent_history.field_privacy_consent_collection_method__note_required
+msgid "Note Required"
+msgstr "Nota obbligatoria"
+
+#. module: privacy_consent_history
+#. odoo-python
+#: code:addons/privacy_consent_history/models/privacy_consent.py:0
+msgid "Note: %(note)s"
+msgstr "Nota: %(note)s"
+
+#. module: privacy_consent_history
+#: model:privacy.consent.collection.method,name:privacy_consent_history.collection_method_other
+msgid "Other"
+msgstr "Altro"
+
+#. module: privacy_consent_history
+#: model:ir.model.fields.selection,name:privacy_consent_history.selection__privacy_consent_log__filled_by_role__parent
+msgid "Parent"
+msgstr "Genitore"
+
+#. module: privacy_consent_history
+#: model:ir.model.fields,field_description:privacy_consent_history.field_privacy_consent_log_archive__recorded_by
+msgid "Recorded By"
+msgstr "Registrato da"
+
+#. module: privacy_consent_history
+#: model:ir.model.fields,field_description:privacy_consent_history.field_privacy_consent_log__user_id
+msgid "Recorded by"
+msgstr "Registrato da"
+
+#. module: privacy_consent_history
+#: model:ir.model.fields.selection,name:privacy_consent_history.selection__privacy_consent_log__answer__refused
+#: model:ir.model.fields.selection,name:privacy_consent_history.selection__privacy_consent_log_archive__answer__refused
+#: model_terms:ir.ui.view,arch_db:privacy_consent_history.consent_log_search
+msgid "Refused"
+msgstr "Negato"
+
+#. module: privacy_consent_history
+#: model:ir.model.fields,field_description:privacy_consent_history.field_privacy_consent_log_archive__related_document
+msgid "Related Document"
+msgstr "Documento collegato"
+
+#. module: privacy_consent_history
+#: model:ir.model.fields,field_description:privacy_consent_history.field_privacy_consent_log__res_id
+msgid "Related document"
+msgstr "Documento collegato"
+
+#. module: privacy_consent_history
+#: model:ir.model.fields,field_description:privacy_consent_history.field_privacy_consent_log__res_model
+msgid "Related document model"
+msgstr "Modello del documento collegato"
+
+#. module: privacy_consent_history
+#: model:ir.model.fields,help:privacy_consent_history.field_privacy_consent__collection_note_required
+#: model:ir.model.fields,help:privacy_consent_history.field_privacy_consent_collection_method__note_required
+msgid "Require a note when a consent answer is recorded with this method."
+msgstr ""
+"Richiede una nota quando una risposta viene registrata con questo modo."
+
+#. module: privacy_consent_history
+#: model:ir.model.fields,field_description:privacy_consent_history.field_privacy_consent_collection_method__sequence
+msgid "Sequence"
+msgstr "Sequenza"
+
+#. module: privacy_consent_history
+#: model:privacy.consent.collection.method,name:privacy_consent_history.collection_method_signed_form
+msgid "Signed paper form"
+msgstr "Modulo cartaceo firmato"
+
+#. module: privacy_consent_history
+#: model:ir.model.fields,field_description:privacy_consent_history.field_privacy_consent_log__source
+#: model:ir.model.fields,field_description:privacy_consent_history.field_privacy_consent_log_archive__source
+#: model_terms:ir.ui.view,arch_db:privacy_consent_history.consent_log_search
+msgid "Source"
+msgstr "Fonte"
+
+#. module: privacy_consent_history
+#: model:ir.model.fields,field_description:privacy_consent_history.field_privacy_consent_log__partner_id
+#: model:ir.model.fields,field_description:privacy_consent_history.field_privacy_consent_log_archive__partner_name
+#: model_terms:ir.ui.view,arch_db:privacy_consent_history.consent_log_archive_search
+#: model_terms:ir.ui.view,arch_db:privacy_consent_history.consent_log_search
+msgid "Subject"
+msgstr "Interessato"
+
+#. module: privacy_consent_history
+#: model:ir.model.fields,field_description:privacy_consent_history.field_privacy_consent_log_archive__partner_vat
+msgid "Tax ID"
+msgstr "Partita IVA"
+
+#. module: privacy_consent_history
+#: model:ir.model.fields,help:privacy_consent_history.field_privacy_consent__accepted_changed
+msgid "The acceptance has been changed in the form and not saved yet."
+msgstr "L'accettazione è stata cambiata nel modulo e non ancora salvata."
+
+#. module: privacy_consent_history
+#. odoo-python
+#: code:addons/privacy_consent_history/models/privacy_consent.py:0
+msgid "The collection date cannot be in the future."
+msgstr "La data della raccolta non può essere nel futuro."
+
+#. module: privacy_consent_history
+#. odoo-python
+#: code:addons/privacy_consent_history/models/privacy_consent.py:0
+msgid "The collection method %(method)s requires a note."
+msgstr "Il modo di raccolta %(method)s richiede una nota."
+
+#. module: privacy_consent_history
+#. odoo-python
+#: code:addons/privacy_consent_history/models/privacy_consent_log_archive.py:0
+msgid "The consent log archive cannot be deleted."
+msgstr "L'archivio del registro dei consensi non si può cancellare."
+
+#. module: privacy_consent_history
+#. odoo-python
+#: code:addons/privacy_consent_history/models/privacy_consent_log_archive.py:0
+msgid "The consent log archive cannot be modified."
+msgstr "L'archivio del registro dei consensi non si può modificare."
+
+#. module: privacy_consent_history
+#. odoo-python
+#: code:addons/privacy_consent_history/models/privacy_consent_log.py:0
+msgid "The consent log cannot be deleted."
+msgstr "Il registro dei consensi non si può cancellare."
+
+#. module: privacy_consent_history
+#. odoo-python
+#: code:addons/privacy_consent_history/models/privacy_consent_log.py:0
+msgid "The consent log cannot be modified."
+msgstr "Il registro dei consensi non si può modificare."
+
+#. module: privacy_consent_history
+#: model:ir.model.fields,help:privacy_consent_history.field_privacy_consent_log_archive__expiry_date
+msgid ""
+"The row is deleted automatically after this date. Empty: kept indefinitely."
+msgstr ""
+"La riga viene cancellata automaticamente dopo questa data. Vuota: conservata"
+" senza scadenza."
+
+#. module: privacy_consent_history
+#. odoo-python
+#: code:addons/privacy_consent_history/models/privacy_consent.py:0
+msgid ""
+"To change the acceptance of a consent, indicate how and when the answer was "
+"collected."
+msgstr ""
+"Per cambiare l'accettazione di un consenso, indica come e quando è stata "
+"raccolta la risposta."
+
+#. module: privacy_consent_history
+#: model:ir.model.fields,help:privacy_consent_history.field_privacy_consent__collection_date
+msgid "When the last answer recorded in the back office was collected."
+msgstr "Quando è stata raccolta l'ultima risposta registrata dal gestionale."
+
+#. module: privacy_consent_history
+#: model:ir.model.fields,help:privacy_consent_history.field_res_config_settings__privacy_consent_archive_retention_years
+msgid ""
+"Years the archived consent log of an anonymized person is kept before being "
+"deleted automatically. 0: kept indefinitely."
+msgstr ""
+"Anni di conservazione del registro archiviato di una persona anonimizzata "
+"prima della cancellazione automatica. 0: senza scadenza."
+
+#. module: privacy_consent_history
+#: model_terms:ir.ui.view,arch_db:privacy_consent_history.res_config_settings_view_form
+msgid ""
+"Years the archived consent log of an anonymized person is kept before being "
+"deleted. 0: kept indefinitely."
+msgstr ""
+"Anni di conservazione del registro archiviato di una persona anonimizzata "
+"prima della cancellazione. 0: senza scadenza."
