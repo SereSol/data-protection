@@ -1,0 +1,49 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* privacy_consent_multi_company
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0-20261015\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-06 13:24+0000\n"
+"PO-Revision-Date: 2026-11-06 13:24+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: privacy_consent_multi_company
+#: model:ir.model.fields,field_description:privacy_consent_multi_company.field_privacy_consent__company_id
+#: model_terms:ir.ui.view,arch_db:privacy_consent_multi_company.consent_search
+msgid "Company"
+msgstr ""
+
+#. module: privacy_consent_multi_company
+#: model:ir.model.fields,help:privacy_consent_multi_company.field_privacy_consent__company_id
+msgid "Company of the data processing activity."
+msgstr ""
+
+#. module: privacy_consent_multi_company
+#: model:ir.model,name:privacy_consent_multi_company.model_privacy_consent
+msgid "Consent of data processing"
+msgstr ""
+
+#. module: privacy_consent_multi_company
+#: model:ir.model,name:privacy_consent_multi_company.model_privacy_activity
+msgid "Data processing activities"
+msgstr ""
+
+#. module: privacy_consent_multi_company
+#: model:ir.model.fields,field_description:privacy_consent_multi_company.field_privacy_activity__display_name
+#: model:ir.model.fields,field_description:privacy_consent_multi_company.field_privacy_consent__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: privacy_consent_multi_company
+#: model:ir.model.fields,field_description:privacy_consent_multi_company.field_privacy_activity__id
+#: model:ir.model.fields,field_description:privacy_consent_multi_company.field_privacy_consent__id
+msgid "ID"
+msgstr ""
