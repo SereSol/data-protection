@@ -1,0 +1,3 @@
+odoo-addon-privacy @ git+https://github.com/OCA/data-protection.git@refs/pull/96/head#subdirectory=privacy
+odoo-addon-privacy_consent @ git+https://github.com/OCA/data-protection.git@refs/pull/97/head#subdirectory=privacy_consent
+odoo-addon-privacy_multi_company @ git+https://github.com/SereSol/data-protection.git@19.0-add-privacy_multi_company#subdirectory=privacy_multi_company
