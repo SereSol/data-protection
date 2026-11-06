@@ -28,16 +28,25 @@ class PrivacyActivity(models.Model):
         for activity in self:
             activity.controller_id = activity.company_id.partner_id
 
+    @api.model
+    def _default_controller_id(self):
+        """Contact of the activity's default company.
+
+        The base module uses the user's main company, which differs from the
+        activity's default company when another company is active.
+        """
+        company_id = self.default_get(["company_id"]).get("company_id")
+        company = self.env["res.company"].browse(company_id) or self.env.company
+        return company.partner_id
+
     @api.model_create_multi
     def create(self, vals_list):
-        # The default controller of the base module is the contact of the
-        # user's main company, which may differ from the activity's company:
-        # when no controller is given, use the contact of the activity's company.
+        # When no controller is given, use the contact of the activity's company.
         for vals in vals_list:
             if "controller_id" not in vals:
-                company_id = vals.get("company_id") or self.default_get(
-                    ["company_id"]
-                ).get("company_id")
-                company = self.env["res.company"].browse(company_id) or self.env.company
-                vals["controller_id"] = company.partner_id.id
+                vals["controller_id"] = (
+                    self.env["res.company"].browse(vals["company_id"]).partner_id.id
+                    if vals.get("company_id")
+                    else self._default_controller_id().id
+                )
         return super().create(vals_list)
