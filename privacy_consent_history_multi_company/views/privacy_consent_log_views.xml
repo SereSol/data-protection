@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2026 APG23
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <record id="consent_log_list" model="ir.ui.view">
+        <field name="name">Consent Log List: company</field>
+        <field name="model">privacy.consent.log</field>
+        <field name="inherit_id" ref="privacy_consent_history.consent_log_list" />
+        <field name="arch" type="xml">
+            <field name="activity_id" position="after">
+                <field
+                    name="company_id"
+                    groups="base.group_multi_company"
+                    optional="show"
+                />
+            </field>
+        </field>
+    </record>
+    <record id="consent_log_form" model="ir.ui.view">
+        <field name="name">Consent Log Form: company</field>
+        <field name="model">privacy.consent.log</field>
+        <field name="inherit_id" ref="privacy_consent_history.consent_log_form" />
+        <field name="arch" type="xml">
+            <field name="activity_id" position="after">
+                <field name="company_id" groups="base.group_multi_company" />
+            </field>
+        </field>
+    </record>
+    <record id="consent_log_search" model="ir.ui.view">
+        <field name="name">Consent Log Search: company</field>
+        <field name="model">privacy.consent.log</field>
+        <field name="inherit_id" ref="privacy_consent_history.consent_log_search" />
+        <field name="arch" type="xml">
+            <field name="activity_id" position="after">
+                <field name="company_id" groups="base.group_multi_company" />
+            </field>
+            <filter name="activity_id_groupby" position="before">
+                <filter
+                    name="company_id_groupby"
+                    string="Company"
+                    context="{'group_by': 'company_id'}"
+                    groups="base.group_multi_company"
+                />
+            </filter>
+        </field>
+    </record>
+</odoo>

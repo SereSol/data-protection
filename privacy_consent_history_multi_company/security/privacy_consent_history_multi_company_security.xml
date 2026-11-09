@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2026 APG23
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo noupdate="1">
+    <record id="privacy_consent_log_company_rule" model="ir.rule">
+        <field name="name">Consent log: multi-company</field>
+        <field
+            name="model_id"
+            ref="privacy_consent_history.model_privacy_consent_log"
+        />
+        <field name="domain_force">[('company_id', 'in', company_ids)]</field>
+    </record>
+    <record id="privacy_consent_log_archive_company_rule" model="ir.rule">
+        <field name="name">Consent log archive: multi-company</field>
+        <field
+            name="model_id"
+            ref="privacy_consent_history.model_privacy_consent_log_archive"
+        />
+        <field
+            name="domain_force"
+        >['|', ('company_id', '=', False), ('company_id', 'in', company_ids)]</field>
+    </record>
+</odoo>
